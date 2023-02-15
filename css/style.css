@@ -35,6 +35,18 @@
     background-color: brown;
 }
 
+.debug #ms-main-top > div{
+    height: 30px;
+    background-color: aquamarine;
+    border: solid 1px black;
+}
+
+.debug #ms-main-bottom .row > div{
+    height: 100px;
+    background-color: cornflowerblue;
+    border: solid 1px black;
+}
+
 
 /* RULES */
 header{
