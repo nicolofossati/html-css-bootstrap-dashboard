@@ -96,11 +96,13 @@ th img{
     border-radius: 50%;
 }
 
-
+.ms-fs-icon{
+    font-size: 24px;
+}
 
 /* MEDIA QUERY */
 /* A partire da...TABLET  [MD] */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 400px){
     
 }
 
@@ -118,4 +120,11 @@ th img{
     a.dropdown-toggle i{
         font-size: 15px;
     }
+
+    .ms-fs-icon{
+        font-size: 18px;
+    }
+
+    
+
 }

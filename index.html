@@ -61,13 +61,22 @@
             <aside class="col-2 col-md-1 d-flex flex-column flex-between justify-content-between text-center">
                 <div class="ms-aside-top text-white">
                     <ul class="px-0 py-4">
-                        <li class="p-1 fs-4"><i class="fa-solid fa-house"></i></li>
-                        <li class="p-1 fs-4"><i class="fa-solid fa-square-poll-vertical"></i></li>
-                        <li class="p-1 fs-4"><i class="fa-solid fa-signal"></i></li>
+                        <li class="p-1 ms-fs-icon">
+                          <i class="fa-solid fa-house"></i>
+                          <span class="d-none d-lg-inline-block">Home</span>
+                        </li>
+                        <li class="p-1 ms-fs-icon">
+                          <i class="fa-solid fa-square-poll-vertical"></i>
+                          <span class="d-none d-lg-inline-block">Stats</span></li>
+                        <li class="p-1 ms-fs-icon">
+                          <i class="fa-solid fa-signal"></i>  
+                          <span class="d-none d-lg-inline-block">Signals</span>
+                        </li>
                     </ul>
                 </div>
-                <div class="ms-aside-bottom text-white">
-                  <i class="py-4 fa-solid fa-gear p-1 fs-4"></i>
+                <div class="ms-aside-bottom text-white py-4">
+                  <i class=" fa-solid fa-gear ms-fs-icon"></i>                  
+                  <span class="d-none d-lg-inline-block">Admin</span>
                 </div>
             </aside>
 
@@ -83,17 +92,17 @@
                         </div>
                         <div class="offcanvas-body">
                           <div class="row">
-                            <div class="col-6 mb-3">
+                            <div class="col-12 col-sm-6 mb-3">
                               <label for="exampleFormControlInput1" class="form-label">Nome</label>
                               <input type="text" class="form-control" id="exampleFormControlInput1">
                             </div>
 
-                            <div class="col-6 mb-3">
+                            <div class="col-12 col-sm-6 mb-3">
                               <label for="exampleFormControlInput1" class="form-label">Cognome</label>
                               <input type="text" class="form-control" id="exampleFormControlInput1">
                             </div>
 
-                            <div class="col-6">
+                            <div class="col-12 col-sm-6">
                               <label for="exampleFormControlInput1" class="form-label">Indirizzo</label>
                               <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1">@</span>
@@ -101,12 +110,12 @@
                               </div>
                             </div>
 
-                            <div class="col-6 mb-3">
+                            <div class="col-12 col-sm-6 mb-3">
                               <label for="exampleFormControlInput1" class="form-label">Password</label>
                               <input type="password" class="form-control" id="exampleFormControlInput1">
                             </div>
                             
-                            <div class="col-6">
+                            <div class="col-12 col-sm-6">
                               <label for="exampleFormControlInput1" class="form-label">Indirizzo Email</label>
                               <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1">@</span>
@@ -114,7 +123,7 @@
                               </div>
                             </div>
 
-                            <div class="col-6 mb-3">
+                            <div class="col-12 col-sm-6 mb-3">
                               <label for="exampleFormControlInput1" class="form-label">Password</label>
                               <input type="password" class="form-control" id="exampleFormControlInput1">
                             </div>
@@ -124,12 +133,12 @@
                               <input type="text" class="form-control" id="exampleFormControlInput1">
                             </div>
 
-                            <div class="col-6 mb-3">
+                            <div class="col-12 col-sm-6 mb-3">
                               <label for="exampleFormControlInput1" class="form-label">Città</label>
                               <input type="text" class="form-control" id="exampleFormControlInput1">
                             </div>
 
-                            <div class="col-4">
+                            <div class="col-12 col-sm-4">
                               <label for="exampleFormControlInput1" class="form-label">Stato</label>
                               <div class="input-group mb-3">
                                 <select class="form-select" id="inputGroupSelect02">
@@ -141,7 +150,7 @@
                               </div>
                             </div>
                             
-                            <div class="col-2 mb-3">
+                            <div class="col-12 col-sm-2 mb-3">
                               <label for="exampleFormControlInput1" class="form-label">CAP</label>
                               <input type="text" class="form-control" id="exampleFormControlInput1">
                             </div>
@@ -219,7 +228,9 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-12">
+
+
+                            <div class="col-12 py-4 pb-lg-0">
                               <div class="card">
                                 <div class="card-header"><h5>F.A.Q.</h5></div>
                                 <div class="accordion" id="accordionExample">
@@ -264,17 +275,43 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-12 col-lg-4">
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-12 pb-4">
                               <div class="card">
-                                <div class="card-header">Todo</div>
-                                
+                                <div class="card-header"><h5>Todo</h5></div>
+                                <ul class="list-group p-3">
+                                  <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                    <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                    <label class="form-check-label" for="secondCheckbox">Lezione su bootstrap 5 in classe #75</label>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                    <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
+                                  </li>
+                                </ul>
                               </div>
                             </div>
+
+                            
                             <div class="col-12">
-                              <div class="card">
-                                
+                              <div class="card p-3">
+                                <ul class="list-group">
+                                  <li class="list-group-item">
+                                    <img src="img/stats.jpeg" class="w-100">
+                                    <h6>Utenti attivi</h6>
+                                    <span>Lista degli utenti attivi in piattaforma nell'ultimo mese</span>
+                                  </li>
+                                  <li class="list-group-item">Gennaio: 1200</li>
+                                  <li class="list-group-item">Febbraio: 800</li>
+                                  <li class="list-group-item">Marzo: 1500</li>
+                                  <li class="list-group-item"> <a href="#">Visualizza report approfondito</a></li>
+                                </ul>
                               </div>
                             </div>
                         </div>
