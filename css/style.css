@@ -8,22 +8,6 @@
     box-sizing: border-box;
 }
 
-
-/* DEBUG */
-.debug #ms-main-bottom{
-    background-color: cornflowerblue;
-}
-
-
-
-.debug #ms-main-bottom .row > div{
-    height: 100px;
-    background-color: cornflowerblue;
-    border: solid 1px black;
-}
-
-
-
 /* RULES */
 header{
     height: 80px;
@@ -94,9 +78,24 @@ header .row .input-group{
     height: 50px;
 }
 
-.ms-logo-desktop{
+.ms-lh-80px{
+    line-height: 80px;
     display: none;
 }
+
+.ms-tag {
+    border-radius: 20px;
+    background-color: #0022525c;
+    padding: 2px 10px;
+    margin-bottom: 5px;
+}
+
+
+th img{
+    width: 30px;
+    border-radius: 50%;
+}
+
 
 
 /* MEDIA QUERY */
@@ -112,9 +111,8 @@ header .row .input-group{
         display: none;
     }
 
-    .ms-logo-desktop{
+    .ms-lh-80px{
         display: block;
-        line-height: 80px;
     }
 
     a.dropdown-toggle i{
