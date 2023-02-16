@@ -101,24 +101,22 @@ th img{
 }
 
 .ms-name-th{
-    width: 55%;
+    width: 50%;
 }
 
-.ms-date-th, .ms-action-th{
-    width: 15%;
+.ms-state-th, .ms-action-th{
+    width: 25%;
 }
 
-.ms-state-th{
-    width: 10%;
+.ms-date-th, .ms-roi-th{
+    display: none;
 }
 
-.ms-roi-th{
-    width: 5%;
+tbody tr td:nth-child(2), tbody tr td:nth-child(3){
+    display: none;
 }
 
-.ms-bttn-edit{
-    width: 45%;
-}
+
 
 .ms-bttn-trash, .ms-bttn-edit{
     width: 40%;
@@ -131,14 +129,22 @@ th img{
     filter: opacity(0.4);
 }
 
-td{
-    padding: 0;
-}
 
 
 /* MEDIA QUERY */
 /* A partire da...TABLET  [MD] */
 @media screen and (min-width: 768px){
+    .ms-name-th{
+        width: 40%;
+    }
+    
+    .ms-date-th, .ms-action-th, .ms-state-th, .ms-roi-th{
+        width: 15%;
+    }
+
+    .ms-date-th, .ms-roi-th, tbody tr td:nth-child(2), tbody tr td:nth-child(3){
+        display: table-cell;
+    }
     
 }
 
@@ -161,6 +167,22 @@ td{
         font-size: 18px;
     }
 
+    
+    .ms-name-th{
+        width: 55%;
+    }
+
+    .ms-date-th, .ms-action-th{
+        width: 15%;
+    }
+
+    .ms-state-th{
+        width: 10%;
+    }
+
+    .ms-roi-th{
+        width: 5%;
+    }
     
 
 }
