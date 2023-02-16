@@ -22,54 +22,139 @@
     <title>Dashboard Boolean</title>
 </head>
 <body class="debug">
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary h-100">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-
-              <form class="d-flex w-100" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              </form>
-
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      bell
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                </ul>
+    <header class="container-fluid">
+        <div class="row h-100">
+            <div class="col-2 h-100 text-center px-0"><img class="h-100" src="img/mobile-logo.png" alt=""></div>
+            <div class="col-9 px-0 d-inline-block d-flex align-items-center">
+              <div class="input-group">
+                <span class="input-group-text personaliz-search" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" class="form-control personaliz-search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
               </div>
             </div>
-          </nav>
+            <div class="col-1 px-0">
+                <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bell fs-3"></i>
+                </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+            </div>
+        </div>
     </header>
 
     <main class="container-fluid">
         <div class="row">
-            <aside class="col-2 col-md-1 d-flex flex-column flex-between justify-content-between">
-                <div class="ms-aside-top">
+            <aside class="col-2 col-md-1 d-flex flex-column flex-between justify-content-between text-center">
+                <div class="ms-aside-top text-white">
+                    <ul class="px-0 py-4">
+                        <li class="p-1 fs-4"><i class="fa-solid fa-house"></i></li>
+                        <li class="p-1 fs-4"><i class="fa-solid fa-square-poll-vertical"></i></li>
+                        <li class="p-1 fs-4"><i class="fa-solid fa-signal"></i></li>
+                    </ul>
                 </div>
-                <div class="ms-aside-bottom">
-
+                <div class="ms-aside-bottom text-white">
+                  <i class="py-4 fa-solid fa-gear p-1 fs-4"></i>
                 </div>
             </aside>
 
             <div class="col-10 col-md-11 ms-main-container px-0">
                 <section id="ms-main-top" class="row p-4">
-                    <div class="col-12 col-md-4 col-lg-6"></div>
+                    <div class="col-12 col-md-4 col-lg-6">
+                      <span class="text-white fw-semibold">Nuovo Studente</span>
+                      <button class="btn btn-primary bg-transparent border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <div class="row">
+                            <div class="col-6 mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                              <input type="text" class="form-control" id="exampleFormControlInput1">
+                            </div>
+
+                            <div class="col-6 mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Cognome</label>
+                              <input type="text" class="form-control" id="exampleFormControlInput1">
+                            </div>
+
+                            <div class="col-6">
+                              <label for="exampleFormControlInput1" class="form-label">Indirizzo</label>
+                              <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+
+                            <div class="col-6 mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            
+                            <div class="col-6">
+                              <label for="exampleFormControlInput1" class="form-label">Indirizzo Email</label>
+                              <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+
+                            <div class="col-6 mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="exampleFormControlInput1">
+                            </div>
+
+                            <div class="col-12 mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Indirizzo</label>
+                              <input type="text" class="form-control" id="exampleFormControlInput1">
+                            </div>
+
+                            <div class="col-6 mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Città</label>
+                              <input type="text" class="form-control" id="exampleFormControlInput1">
+                            </div>
+
+                            <div class="col-4">
+                              <label for="exampleFormControlInput1" class="form-label">Stato</label>
+                              <div class="input-group mb-3">
+                                <select class="form-select" id="inputGroupSelect02">
+                                  <option selected="">Scegli...</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                              </div>
+                            </div>
+                            
+                            <div class="col-2 mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">CAP</label>
+                              <input type="text" class="form-control" id="exampleFormControlInput1">
+                            </div>
+
+                            <div class="col-12">
+                              <label for="exampleFormControlInput1" class="form-label">Foto</label>
+                              <div class="input-group">
+                                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                              </div>
+                            </div>
+
+                            <div class="col-12 py-4">
+                              <input type="checkbox" class="me-2" name="" id="">Seleziona per proseguire
+                            </div>
+                            
+                            <div class="col-12">
+                              <input type="button" value="Svuota" class="ms-bttn ms-bttn-clean">
+                              <input type="button" value="Salva" class="ms-bttn ms-bttn-save">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="col-12 col-md-4 col-lg-4"></div>
                     <div class="col-12 col-md-4 col-lg-2"></div>
                 </section>

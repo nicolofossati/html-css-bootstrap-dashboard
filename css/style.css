@@ -1,3 +1,7 @@
+:root{
+    --ms-blue-color: #1B72E8;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,46 +10,18 @@
 
 
 /* DEBUG */
-.debug header{
-    background-color: bisque;
-}
-
-.debug main{
-    background-color: aqua;
-}
-
-.debug aside{
-    background-color: rgb(2, 2, 53);
-}
-
-.debug .ms-main-container{
-    background-color: rgb(70, 209, 86);
-}
-
-.debug #ms-main-top{
-    background-color: blueviolet;
-    height: 250px;
-}
 .debug #ms-main-bottom{
     background-color: cornflowerblue;
 }
 
-.debug .ms-aside-top, .debug .ms-aside-bottom{
-    height: 50px;
-    background-color: brown;
-}
 
-.debug #ms-main-top > div{
-    height: 30px;
-    background-color: aquamarine;
-    border: solid 1px black;
-}
 
 .debug #ms-main-bottom .row > div{
     height: 100px;
     background-color: cornflowerblue;
     border: solid 1px black;
 }
+
 
 
 /* RULES */
@@ -55,6 +31,8 @@ header{
 
 aside{
     height: calc(100vh - 80px);
+    background-color: #000a32f0;
+    background-image: url('../img/sidebar-bg.png');
 }
 
 .ms-main-container{
@@ -62,10 +40,55 @@ aside{
     overflow-y: scroll;
 }
 
+a.dropdown-toggle i{
+    color: orange;
+    line-height: 80px;
+}
+
+a.dropdown-toggle::after{
+    display: none;
+}
+
+header .row .col-1 i.fa-search, header .row .col-11 input.form-control{
+    line-height: 80px  ;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+li{
+    list-style-type: none;
+}
+
 #ms-main-top{
+    background-color: var(--ms-blue-color);
 }
-#ms-main-bottom{
+
+.personaliz-search{
+    border: 0;
+    background-color: #E5E5E5;
 }
+
+
+.ms-bttn{
+    width: auto;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.ms-bttn-clean{
+    background-color: #0D6DFD;
+    color: white;
+}
+
+.ms-bttn-save{
+    background-color: #FFC107;
+}
+
 
 
 /* MEDIA QUERY */
