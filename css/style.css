@@ -43,6 +43,7 @@ aside{
 a.dropdown-toggle i{
     color: orange;
     line-height: 80px;
+    font-size: 30px;
 }
 
 a.dropdown-toggle::after{
@@ -89,6 +90,13 @@ li{
     background-color: #FFC107;
 }
 
+header .row .input-group{
+    height: 50px;
+}
+
+.ms-logo-desktop{
+    display: none;
+}
 
 
 /* MEDIA QUERY */
@@ -100,5 +108,16 @@ li{
 
 /* A partire da...DESKTOP  [LG] */
 @media screen and (min-width: 992px){
-    
+    .ms-logo-mobile{
+        display: none;
+    }
+
+    .ms-logo-desktop{
+        display: block;
+        line-height: 80px;
+    }
+
+    a.dropdown-toggle i{
+        font-size: 15px;
+    }
 }

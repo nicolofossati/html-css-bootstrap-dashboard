@@ -24,23 +24,34 @@
 <body class="debug">
     <header class="container-fluid">
         <div class="row h-100">
-            <div class="col-2 h-100 text-center px-0"><img class="h-100" src="img/mobile-logo.png" alt=""></div>
-            <div class="col-9 px-0 d-inline-block d-flex align-items-center">
+            <div class="col-2 col-lg-1 h-100 text-center px-0 d-flex align-items-center justify-content-center">
+              <img class="h-100 ms-logo-mobile" src="img/mobile-logo.png" alt="">
+              <img class="ms-logo-desktop w-100 px-1" src="img/logo.svg" alt="">
+            </div>
+
+            <div class="col-9 col-lg-10 px-0 d-inline-block d-flex align-items-center">
               <div class="input-group">
                 <span class="input-group-text personaliz-search" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
                 <input type="text" class="form-control personaliz-search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
               </div>
             </div>
-            <div class="col-1 px-0">
-                <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-bell fs-3"></i>
-                </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
+
+            <div class="col-1 col-lg-1 px-0">
+              <div class="row">
+                <div class="col-0 col-lg-3 px-0"></div>
+                <div class="col-0 col-lg-3 px-0"></div>
+                <div class="col-0 col-lg-3 px-0"></div>
+                <div class="col-12 col-lg-3 px-0">
+                  <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bell"></i>
+                  </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+              </div>
             </div>
         </div>
     </header>
