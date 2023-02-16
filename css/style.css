@@ -100,9 +100,45 @@ th img{
     font-size: 24px;
 }
 
+.ms-name-th{
+    width: 55%;
+}
+
+.ms-date-th, .ms-action-th{
+    width: 15%;
+}
+
+.ms-state-th{
+    width: 10%;
+}
+
+.ms-roi-th{
+    width: 5%;
+}
+
+.ms-bttn-edit{
+    width: 45%;
+}
+
+.ms-bttn-trash, .ms-bttn-edit{
+    width: 40%;
+    aspect-ratio: 1/1;
+    border: rgb(156, 156, 156) 2px solid;
+    background-color: transparent;
+}
+
+.ms-bttn-trash i, .ms-bttn-edit i{
+    filter: opacity(0.4);
+}
+
+td{
+    padding: 0;
+}
+
+
 /* MEDIA QUERY */
 /* A partire da...TABLET  [MD] */
-@media screen and (min-width: 400px){
+@media screen and (min-width: 768px){
     
 }
 
